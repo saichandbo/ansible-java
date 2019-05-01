@@ -22,3 +22,8 @@
     service:
       name: httpd
       state: restarted
+
+  - name: touch file
+    file:
+      path: /root/sample.txt
+      state: touch
